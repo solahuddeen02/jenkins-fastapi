@@ -1,7 +1,7 @@
 pipeline {
     agent none
     environment {
-        SONARQ = 'SonarQube'          // ชื่อ SonarQube server ใน Jenkins
+        SONARQ = 'SonarQube'
         IMAGE_NAME = 'fastapi-app:latest'
         CONTAINER_NAME = 'fastapi-app'
         APP_PORT = '8000'
@@ -30,17 +30,14 @@ pipeline {
                     pip install --no-cache-dir -r requirements.txt
                     pip install pytest-cov
                     export PYTHONPATH=$PWD
-                    pytest --maxfail=1 --disable-warnings -q
-                '''
-                sh '''
-                    . venv/bin/activate
-                    export PYTHONPATH=$PWD
-                    pytest --maxfail=1 -q --disable-warnings --cov=app --cov-report=xml
+                    mkdir -p reports
+                    pytest --maxfail=1 --disable-warnings -q --junitxml=reports/test-results.xml
+                    pytest --maxfail=1 -q --disable-warnings --cov=app --cov-report=xml --junitxml=reports/test-results.xml
                 '''
             }
             post {
                 always {
-                    junit allowEmptyResults: true, testResults: '**/pytest*.xml'
+                    junit allowEmptyResults: true, testResults: 'reports/test-results.xml'
                     archiveArtifacts artifacts: 'coverage.xml', allowEmptyArchive: true
                 }
             }
@@ -50,7 +47,7 @@ pipeline {
             agent {
                 docker {
                     image 'sonarsource/sonar-scanner-cli:latest'
-                    args "-v $WORKSPACE:/usr/src -w /usr/src"
+                    args "-v ${env.WORKSPACE}:/usr/src -w /usr/src"
                 }
             }
             steps {
@@ -66,15 +63,6 @@ pipeline {
                 }
             }
         }
-
-        // stage('Quality Gate') {
-        //     agent any
-        //     steps {
-        //         timeout(time: 2, unit: 'MINUTES') {
-        //             waitForQualityGate abortPipeline: true
-        //         }
-        //     }
-        // }
 
         stage('Build Docker Image') {
             agent {
