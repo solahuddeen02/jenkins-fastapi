@@ -25,8 +25,12 @@ pipeline {
       }
       steps {
         sh 'python --version'
-        sh 'pip install --no-cache-dir -r requirements.txt'
-        // สร้าง coverage.xml ให้ Sonar เห็น
+        sh '''
+            python -m venv venv
+            . venv/bin/activate
+            pip install --no-cache-dir -r requirements.txt
+            pytest --maxfail=1 --disable-warnings -q
+        '''
         sh 'pytest --maxfail=1 -q --disable-warnings --cov=app --cov-report=xml'
       }
       post {
