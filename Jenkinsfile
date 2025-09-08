@@ -26,6 +26,7 @@ pipeline {
                 sh '''
                     python -m venv venv
                     . venv/bin/activate
+                    pip install --upgrade pip
                     pip install --no-cache-dir -r requirements.txt
                     pip install pytest-cov
                     export PYTHONPATH=$PWD
