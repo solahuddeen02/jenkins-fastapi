@@ -1,51 +1,106 @@
 pipeline {
-    agent any
-
+    agent none
     environment {
-        DOCKER_IMAGE = 'my-fastapi-image:latest'
-        DOCKER_CLI_IMAGE = 'docker:24.0-cli'
+        SONARQ = 'sonarqube-25.8.0'   // ชื่อตรงกับที่ตั้งใน Jenkins > Manage Jenkins > Configure System
+        IMAGE_NAME = 'fastapi-app:latest'
+        CONTAINER_NAME = 'fastapi-app'
+        APP_PORT = '8000'
     }
 
     stages {
         stage('Checkout') {
+            agent any
             steps {
-                git 'https://github.com/solahuddeen02/fastapi-demo.git' // เปลี่ยนเป็น repo ของคุณ
+                checkout([$class: 'GitSCM',
+                  branches: [[name: '*/main']],
+                  userRemoteConfigs: [[url: 'https://github.com/solahuddeen02/jenkins-fastapi.git']]
+                ])
             }
         }
 
-        stage('Pull Docker CLI') {
+        stage('Install & Test (Python)') {
+            agent {
+                docker { image 'python:3.11' }
+            }
             steps {
-                script {
-                    // ดึง Docker CLI image มาก่อนใช้
-                    sh "docker pull ${DOCKER_CLI_IMAGE}"
+                sh '''
+                    python -m venv venv
+                    . venv/bin/activate
+                    pip install --upgrade pip
+                    pip install --no-cache-dir -r requirements.txt
+                    pip install pytest-cov
+                    export PYTHONPATH=$PWD
+                    mkdir -p reports
+                    pytest --maxfail=1 --disable-warnings -q --junitxml=reports/test-results.xml
+                    pytest --maxfail=1 -q --disable-warnings --cov=app --cov-report=xml --junitxml=reports/test-results.xml
+                '''
+            }
+            post {
+                always {
+                    junit allowEmptyResults: true, testResults: 'reports/test-results.xml'
+                    archiveArtifacts artifacts: 'coverage.xml', allowEmptyArchive: true
+                }
+            }
+        }
+
+        stage('SonarQube Analysis') {
+            agent {
+                docker {
+                    image 'sonarsource/sonar-scanner-cli:latest'
+                    args "-v ${env.WORKSPACE}:/usr/src -w /usr/src"
+                }
+            }
+            steps {
+                withSonarQubeEnv("${SONARQ}") {
+                    sh '''
+                        sonar-scanner \
+                          -Dsonar.projectKey=jenkins-fastapi \
+                          -Dsonar.sources=./app \
+                          -Dsonar.tests=tests \
+                          -Dsonar.python.coverage.reportPaths=coverage.xml \
+                          -Dsonar.sourceEncoding=UTF-8
+                    '''
+                }
+            }
+        }
+
+        stage('Quality Gate') {
+            steps {
+                timeout(time: 1, unit: 'HOURS') {
+                    waitForQualityGate abortPipeline: true
                 }
             }
         }
 
         stage('Build Docker Image') {
-            steps {
-                // ใช้ docker container รัน Docker CLI
-                withDockerContainer(image: "${DOCKER_CLI_IMAGE}", args: "-v /var/run/docker.sock:/var/run/docker.sock -u root") {
-                    // ตรวจสอบว่า Dockerfile อยู่ใน root ของ workspace
-                    sh "docker build -t ${DOCKER_IMAGE} ."
+            agent {
+                docker {
+                    image 'docker:24.0-cli'
+                    args '-v /var/run/docker.sock:/var/run/docker.sock'
                 }
+            }
+            steps {
+                sh 'docker build -t ${IMAGE_NAME} .'
             }
         }
 
-        stage('Push Docker Image') {
-            steps {
-                script {
-                    // login ก่อน push ถ้าจำเป็น
-                    // sh "docker login -u USERNAME -p PASSWORD your-registry.com"
-                    sh "docker push ${DOCKER_IMAGE}"
+        stage('Deploy Container') {
+            agent {
+                docker {
+                    image 'docker:24.0-cli'
+                    args '-v /var/run/docker.sock:/var/run/docker.sock'
                 }
+            }
+            steps {
+                sh 'docker rm -f ${CONTAINER_NAME} || true'
+                sh 'docker run -d --name ${CONTAINER_NAME} -p ${APP_PORT}:8000 ${IMAGE_NAME}'
             }
         }
     }
 
     post {
         always {
-            echo "Pipeline finished"
+            echo 'Pipeline finished'
         }
     }
 }
