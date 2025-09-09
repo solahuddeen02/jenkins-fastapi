@@ -54,8 +54,10 @@ pipeline {
                 withSonarQubeEnv("${SONARQ}") {
                     sh '''
                         sonar-scanner \
-                          -Dsonar.projectKey=fastapi-clean-demo \
-                          -Dsonar.sources=app \
+                          -Dsonar.projectKey=jenkins-fastapi \
+                          -Dsonar.sources=./app \
+                          -Dsonar.host.url=http://sonarqube:9000 \
+                          -Dsonar.login=$SONAR_TOKEN
                           -Dsonar.tests=tests \
                           -Dsonar.python.coverage.reportPaths=coverage.xml \
                           -Dsonar.sourceEncoding=UTF-8
