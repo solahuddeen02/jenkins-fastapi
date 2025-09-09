@@ -1,7 +1,7 @@
 pipeline {
     agent none
     environment {
-        SONARQ = 'SonarQube'
+        SONARQ = 'sonarqube-25.8.0'
         IMAGE_NAME = 'fastapi-app:latest'
         CONTAINER_NAME = 'fastapi-app'
         APP_PORT = '8000'
