@@ -3,7 +3,7 @@
   <installations>
     <hudson.plugins.sonar.SonarInstallation>
       <name>sonarqube-25.8.0</name>
-      <serverUrl>http://host.docker.internal:9000 </serverUrl>
+      <serverUrl>http://host.docker.internal:9000</serverUrl>
       <credentialsId>sonarqube-token</credentialsId>
       <webhookSecretId></webhookSecretId>
       <mojoVersion></mojoVersion>
