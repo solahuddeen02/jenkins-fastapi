@@ -56,7 +56,7 @@ pipeline {
                         sonar-scanner \
                           -Dsonar.projectKey=jenkins-fastapi \
                           -Dsonar.sources=./app \
-                          -Dsonar.host.url=http://sonarqube:9000 \
+                          -Dsonar.host.url=http://host.docker.internal:9000 \
                           -Dsonar.login=squ_532bd463acaf828450f602bee1ed44357f964da9
                           -Dsonar.tests=tests \
                           -Dsonar.python.coverage.reportPaths=coverage.xml \
