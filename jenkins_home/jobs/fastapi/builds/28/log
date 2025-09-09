@@ -1,0 +1,377 @@
+Started by user [8mha:////4OJ3r2+MWQYrX7aA0Hp/+tsAKODNsOvMJXGGPbEdI7DdAAAAlh+LCAAAAAAAAABb85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYu/dLi1CL9lNTUPABZfZD7vwAAAA==[0msolahuddeen
+Obtained Jenkinsfile from git https://github.com/solahuddeen02/jenkins-fastapi.git
+[8mha:////4KD2swpb0+xnAIH6Xr/pxoV8jlKGgTmGAK2VA/1gWWMfAAAAoh+LCAAAAAAAAABtjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4D+Ag5e/W+cGjeZ281txBvLM8wTY4lQfZ6f08dUHB/yyAAAApR+LCAAAAAAAAABtjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] withEnv
+[8mha:////4Oq80O8dEzfoCi+JgITWm547yv/OLgy1YD38zT0/rLQPAAAApR+LCAAAAAAAAABtjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4CugZH6rIKTu9T4uUntfXfYFTH73NOX6qACqDphpf18rAAAApR+LCAAAAAAAAABtjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4F8atL8KSrifH6cr8NOo1d5ntA5fCjKYHKXmmRJdzGXeAAAApR+LCAAAAAAAAABtjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Checkout)
+[8mha:////4IJDdqOmgzGM+Kb1oqLOzKw8R8SnAPSKTdYB9GIXnP/lAAAApR+LCAAAAAAAAABtjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4NINzvQf6YsTYWfySG7FXIgIlDK52jSZWF/ia4xBfRNzAAAAoR+LCAAAAAAAAABb85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZR/eT83ILSktQifY2k0sycEt3MPE19AHHxbH3KAAAA[0mJenkins in /var/jenkins_home/workspace/fastapi
+[8mha:////4GNKTntauEgL89nMDLrIPdqBglEk0YjK/3qa8RX5nth2AAAApR+LCAAAAAAAAABtjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] {
+[8mha:////4CdJ89FHimQ5p2wF5jjtg2EFu1bn+dAPQBofMmY5/rqqAAAAoh+LCAAAAAAAAABtjTEOAiEURD9rLGwtPQTbaoyVLaHxBMgiwpL/WWDdrTyRV/MOEjexcpJJ5k3zXm9Y5wQnSpZ7g73DrB2PYbR18YlSfws0cU9XrgkzBcOlmSR15rygpGJgCWtgJWBjUAfKDm2BrfDqodqg0LaXkup3FNC4boAnMFHNRaXyhTnB7j52mfDn+SuAORZg+9pD/AAeoCAqvAAAAA==[0m[Pipeline] checkout
+The recommended git tool is: git
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fastapi/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/solahuddeen02/jenkins-fastapi.git # timeout=10
+Fetching upstream changes from https://github.com/solahuddeen02/jenkins-fastapi.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.5'
+ > git fetch --tags --force --progress -- https://github.com/solahuddeen02/jenkins-fastapi.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 8b2e6c7f443307ee965f199a46f9b9f58feb3519 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 8b2e6c7f443307ee965f199a46f9b9f58feb3519 # timeout=10
+Commit message: "udate file"
+ > git rev-list --no-walk 4b0b233f3a6b59fa93ca426b55141e00e5509907 # timeout=10
+[8mha:////4EwV7lUqTJWJBtOq6UALM8S6QC1kZx7rPGojB7QUyolJAAAAph+LCAAAAAAAAABtjTEOwjAQBM9BKWgpeYQDHRKiorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INcXYwW8EAAAA=[0m[Pipeline] withEnv
+[8mha:////4KRg5IpumpjgMXhW5oVMBKlRulzTzcYKls+FKtWgh05WAAAApR+LCAAAAAAAAABtjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4OFsYTukBdEkiHZ8hQDhWUbXYeKINxOFevkrDekg5ZF9AAAAox+LCAAAAAAAAABtjTESwiAURH/iWNhaeggysXWsbBkaT4AJIoT5nwCRVJ7Iq3kH0cxYucXOvm3e8wXrGOBIQTOrcDAYO8O8m3RZLFMYro4ys3RhHWEkp5hQWVCvTgsKSgqWVDWsOGwUdo6iQZ1gy628y8ZJ1M05hfIdONSmH+EBFS/mJEP6whxgd5v6SPjz/BXA7BPUbfupvX8DpQJrNb4AAAA=[0m[Pipeline] checkout
+The recommended git tool is: git
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fastapi/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/solahuddeen02/jenkins-fastapi.git # timeout=10
+Fetching upstream changes from https://github.com/solahuddeen02/jenkins-fastapi.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.5'
+ > git fetch --tags --force --progress -- https://github.com/solahuddeen02/jenkins-fastapi.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 8b2e6c7f443307ee965f199a46f9b9f58feb3519 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 8b2e6c7f443307ee965f199a46f9b9f58feb3519 # timeout=10
+Commit message: "udate file"
+[8mha:////4P2BxE+allKhj2O/Tbh/u+XSDc94lu+XyrxJSkBn7m/eAAAAox+LCAAAAAAAAABtjTESwiAURH/iWNhaeggyGUvHypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzN4nqNv9p9o3geV5574AAAA=[0m[Pipeline] }
+[8mha:////4CH+uZ/so/6xpJwz6e84Cb7BSUJSjhWOBCV2RTfIOyBAAAAApB+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOICEh2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7Bq/le42+AAAA[0m[Pipeline] // withEnv
+[8mha:////4Pe6u4l0/0QozWYg8UTFvk5IIWphX/gUOehSvfy9+qs1AAAApB+LCAAAAAAAAABtjTEOwjAQBDdBFLSUPMIRBRISoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN/uBNn+A97oExO9AAAA[0m[Pipeline] }
+[8mha:////4ETj0Zt5MRPmtbc4h+5brEu4TS8FY8lHugNe/MBjCTaFAAAAox+LCAAAAAAAAABtjTEOwjAQBDdBFLSUPMIRDRSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsPn48MxL0AAAA=[0m[Pipeline] // node
+[8mha:////4L4HccQMplZLxNTeuvitFQydQtDXVayod4yELIATnCRrAAAAox+LCAAAAAAAAABtjTEOwjAQBDdBFLSUPMIRDRSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsXZLsPuZZrjr0AAAA=[0m[Pipeline] }
+[8mha:////4K2ThA7gAgCx5+uaqNhI2WRIilPBdPXx0/JRUYpfAnczAAAApB+LCAAAAAAAAABtjTEOwjAQBDdBFLSUPMIRBRISoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN/uBdnuA9JQMpW9AAAA[0m[Pipeline] // stage
+[8mha:////4MakFo3Zxha/6mtmlbv3L4rq9CzIFX9qumwWMwBiEPSZAAAApx+LCAAAAAAAAABtjTEOwjAQBM9BKWgpeYQjJBqEqGgtN7zAxMY4se6CfSGpeBFf4w8EIlGx1c5Kq3m+oMwJDpS8bBy2AXMdZBd7PzU5UGovkQbZ0FnWhJmik9oNmqw7zqiJHcwRBSwULB3WkXJAz7BSjbmbKhr01YnTtO0VFMHe4AFCTWY2ib8wJlhfe5sJf56/Ahg7BrFlKDa7z7F8A361JXbBAAAA[0m[Pipeline] stage
+[8mha:////4P6KCDbEkde15Y61XT/Feivz/fIE1sD0SXKZk0KI5hFlAAAApx+LCAAAAAAAAABtjTEOwjAUQ3+LOrAycogU2BDqxBp14QShCSFp9H9JUtKJE3E17kCgEhMeLNuS9Z4vqIKHhrxmVmFvMHSGDW7UObFEvr84SszSmXWEgZxirUotSXWca0tRwayihAWHpcLOUTCoI6y4FXdRO4G6PkWftwOH0sgbPKDgmRyFj98yeVhfRxkIf5y/AJiGCOV2n223+TyrN7xWSV3CAAAA[0m[Pipeline] { (Install & Test (Python))
+[8mha:////4B9/+LUv8wnDTjen8lzNcypaIzdcGmTQnBdxLS2vYD3VAAAAph+LCAAAAAAAAABtjTEOwjAUQ3+LOrAycogUWBFT1ygLJwhNCGmj/8tPSjtxIq7GHWipxIQHy7ZkvdcbishwInaisdh6jLUXXejdlMRA3F4DDaKhi6gJIwUrlB0UGVstVVGysCjLYSVhbbEOFD26BBvZ6Icug0ZXnhNP21FC7s0dnpDJiZw0p28ZGba33kTCH+cvAMYuQX7Yzbafn8UHbGnGmsIAAAA=[0m[Pipeline] node
+Running on [8mha:////4NINzvQf6YsTYWfySG7FXIgIlDK52jSZWF/ia4xBfRNzAAAAoR+LCAAAAAAAAABb85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZR/eT83ILSktQifY2k0sycEt3MPE19AHHxbH3KAAAA[0mJenkins in /var/jenkins_home/workspace/fastapi
+[8mha:////4Egvd0e+K43IwlC10mmK+YNXDkXFESpTbcVHFGCShSlXAAAAph+LCAAAAAAAAABtjTEOwjAUQ3+DOrAycohUdEVMrFEXThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbyhjgRMFwp7GzGFvLez+aOfFMobt5ytzRlbeEkbzmjc4NKX1ea0NJw6qCwUbAVmPrKVo0CXbCyYesvERTXVKYt6MAZtUATyjETE4ypG+ZAuzvo4qEP85fAEx9AlYfFquXZ/kBAsTc3cIAAAA=[0m[Pipeline] {
+[8mha:////4O8CF93K98m1d87HongTcGSdx8pP75Y4AFK7OnnoDaxKAAAAox+LCAAAAAAAAABtjTESwiAURH/iWNhaeggyE0vHypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzD5B3baf2vs3w5BRkb4AAAA=[0m[Pipeline] checkout
+The recommended git tool is: git
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fastapi/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/solahuddeen02/jenkins-fastapi.git # timeout=10
+Fetching upstream changes from https://github.com/solahuddeen02/jenkins-fastapi.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.5'
+ > git fetch --tags --force --progress -- https://github.com/solahuddeen02/jenkins-fastapi.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 8b2e6c7f443307ee965f199a46f9b9f58feb3519 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 8b2e6c7f443307ee965f199a46f9b9f58feb3519 # timeout=10
+Commit message: "udate file"
+[8mha:////4DwWnJISyECD0EOVcRDxmePAAKGPNb2wAQV4h0nkSvaoAAAApx+LCAAAAAAAAABtjTEOwjAUQ3+LOrAycohUqtgQE2uUhROEJoSk0f9tkpJOnIircQdaKjHhwbItWe/1hioGOFEwzGnsLMbWst6PZk4sU+hunjJzdGUtYSSvmdBZkNLntQpKGlYVJWw4bDW2nqJFk2DHnXzI2ks09SWFeTtyKK0a4AkFn8lJhvQtU4D9fVSR8Mf5C4CpT1A2zWKH5Vl9AB5BZ5LCAAAA[0m[Pipeline] withEnv
+[8mha:////4EnuWmOsbmnK78B5N8cUxEY7qF81GJScett4ko9NaOMRAAAApx+LCAAAAAAAAABtjTEOwjAUQ3+LOrAycohUQjAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/hYjrHCAAAA[0m[Pipeline] {
+[8mha:////4IrA0u3sqFKpIyGyJ0DAhxUBLDtfAVwBNhWTjUt5LM2OAAAApR+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOIiIUGDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAEIWoEpvgAAAA==[0m[Pipeline] isUnix
+[8mha:////4OIfzmpb/B21K3FPuy8Zo1X0QtV+vuhPLcqRoK4+wOZEAAAAqB+LCAAAAAAAAABtjTEOwjAUQ3+LOrAycohUQkIMiKlrlIUThCaEtNH/5SelnTgRV+MOtFRiwoNlW7Le6w1FZDgRO9FYbD3G2osu9G5KYiBur4EG0dBF1ISRghXKDoqMrZaqKFlYlOWwkrC2WAeKHl2CjWz0Q5dBoyvPiaftKCH35g5PyORETprTt4wM21tvIuGP8xcAY5cg3+1nO8zP4gMzJsg9wgAAAA==[0m[Pipeline] withEnv
+[8mha:////4KU2Du+C51uTKAsf3VG3fdhHmvGoaYUxWwwQK+4DU76YAAAAqB+LCAAAAAAAAABtjTEOwjAUQ3+LOrAycohUYgEJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAnLfKUwgAAAA==[0m[Pipeline] {
+[8mha:////4HP+cBBl7/H97vc89y/TFJS/Jwhg70UMa9CO4GXS6vZAAAAApB+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOIiUYEQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHNwcnzs++AAAA[0m[Pipeline] sh
++ docker inspect -f . python:3.11
+.
+[8mha:////4G+9EkeY6y8HblK5SJTBl9vh2O4YVrnpyFUsgCZFQL7vAAAApR+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOKCoEFCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw9hbYOkvgAAAA==[0m[Pipeline] }
+[8mha:////4HweyaZRHNFfc6Z8U8r/Oq7M5GfKBTnopqyzoe+wThidAAAApR+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOIioKBAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw9Vo2D/vgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4CEQyx/WaMA6KgFBILdPQ+b+9NuPP0J6+723BSpKxewtAAAAqB+LCAAAAAAAAABtjTEOwjAUQ3+LOrAycohUKmJCTF2jLpwgNCEkjf4vSUo6cSKuxh0IVGLCg2Vbst7zBVXwcCSvmVU4GAy9YaObdE4skR8ujhKzdGY9YSCnWKdSR1K1S+0oKlhUlLDisFbYOwoGdYQNt+IuaidQ16fo83bgUBp5gwcUPJOj8PFbZg/b6yQD4Y/zFwDzGKFs9tl2zedZvQE0vHLLwgAAAA==[0m[Pipeline] withDockerContainer
+Jenkins seems to be running inside container 15743814b0c8cc86bf4995842a9622d939f96770bf8bda0a31f6ae03bcc26167
+$ docker run -t -d -u 1000:1000 -w /var/jenkins_home/workspace/fastapi --volumes-from 15743814b0c8cc86bf4995842a9622d939f96770bf8bda0a31f6ae03bcc26167 -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** python:3.11 cat
+$ docker top 47f82adbe09d5f7dda9b6a1922101c53f71c6a6ecdd8444032de28d16bbb7d29 -eo pid,comm
+[8mha:////4L3uDWVKCblujPQP9PxpdZ+mhfBm0YO4Rrm1F7WEF8zYAAAAph+LCAAAAAAAAABtjTEOwjAUQ3+DOrAycohUoiNiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsPfTawssIAAAA=[0m[Pipeline] {
+[8mha:////4MiT+rMrITlhlluNzYEA/zDPa3isH/Xx3IOxjYXe9ehRAAAAox+LCAAAAAAAAABtjTESwiAURH/iWNhaeghSxM6xsmVoPAEmiBDmfwJEUnkir+YdRDNj5RY7+7Z5zxesY4AjBc2swsFg7AzzbtJlsUxhuDrKzNKFdYSRnGJCZUG9Oi0oKClYUtWw4rBR2DmKBnWCLbfyLhsnUTfnFMp34FCbfoQHVLyYkwzpC3OA3W3qI+HP81cAs09Qt+2n9v4NGWcPtb4AAAA=[0m[Pipeline] sh
++ python -m venv venv
++ . venv/bin/activate
++ deactivate nondestructive
++ [ -n  ]
++ [ -n  ]
++ hash -r
++ [ -n  ]
++ unset VIRTUAL_ENV
++ unset VIRTUAL_ENV_PROMPT
++ [ ! nondestructive = nondestructive ]
++ VIRTUAL_ENV=/var/jenkins_home/workspace/fastapi/venv
++ export VIRTUAL_ENV
++ _OLD_VIRTUAL_PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++ PATH=/var/jenkins_home/workspace/fastapi/venv/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++ export PATH
++ [ -n  ]
++ [ -z  ]
++ _OLD_VIRTUAL_PS1=$ 
++ PS1=(venv) $ 
++ export PS1
++ VIRTUAL_ENV_PROMPT=(venv) 
++ export VIRTUAL_ENV_PROMPT
++ hash -r
++ pip install --upgrade pip
+WARNING: The directory '/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Requirement already satisfied: pip in ./venv/lib/python3.11/site-packages (25.2)
++ pip install --no-cache-dir -r requirements.txt
+Requirement already satisfied: fastapi==0.111.0 in ./venv/lib/python3.11/site-packages (from -r requirements.txt (line 1)) (0.111.0)
+Requirement already satisfied: uvicorn==0.30.0 in ./venv/lib/python3.11/site-packages (from -r requirements.txt (line 2)) (0.30.0)
+Requirement already satisfied: pytest==8.2.0 in ./venv/lib/python3.11/site-packages (from -r requirements.txt (line 3)) (8.2.0)
+Requirement already satisfied: httpx==0.27.0 in ./venv/lib/python3.11/site-packages (from -r requirements.txt (line 4)) (0.27.0)
+Requirement already satisfied: coverage==7.6.0 in ./venv/lib/python3.11/site-packages (from -r requirements.txt (line 5)) (7.6.0)
+Requirement already satisfied: pytest-cov==6.3.0 in ./venv/lib/python3.11/site-packages (from -r requirements.txt (line 6)) (6.3.0)
+Requirement already satisfied: starlette<0.38.0,>=0.37.2 in ./venv/lib/python3.11/site-packages (from fastapi==0.111.0->-r requirements.txt (line 1)) (0.37.2)
+Requirement already satisfied: pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 in ./venv/lib/python3.11/site-packages (from fastapi==0.111.0->-r requirements.txt (line 1)) (2.11.7)
+Requirement already satisfied: typing-extensions>=4.8.0 in ./venv/lib/python3.11/site-packages (from fastapi==0.111.0->-r requirements.txt (line 1)) (4.15.0)
+Requirement already satisfied: fastapi-cli>=0.0.2 in ./venv/lib/python3.11/site-packages (from fastapi==0.111.0->-r requirements.txt (line 1)) (0.0.10)
+Requirement already satisfied: jinja2>=2.11.2 in ./venv/lib/python3.11/site-packages (from fastapi==0.111.0->-r requirements.txt (line 1)) (3.1.6)
+Requirement already satisfied: python-multipart>=0.0.7 in ./venv/lib/python3.11/site-packages (from fastapi==0.111.0->-r requirements.txt (line 1)) (0.0.20)
+Requirement already satisfied: ujson!=4.0.2,!=4.1.0,!=4.2.0,!=4.3.0,!=5.0.0,!=5.1.0,>=4.0.1 in ./venv/lib/python3.11/site-packages (from fastapi==0.111.0->-r requirements.txt (line 1)) (5.11.0)
+Requirement already satisfied: orjson>=3.2.1 in ./venv/lib/python3.11/site-packages (from fastapi==0.111.0->-r requirements.txt (line 1)) (3.11.3)
+Requirement already satisfied: email_validator>=2.0.0 in ./venv/lib/python3.11/site-packages (from fastapi==0.111.0->-r requirements.txt (line 1)) (2.3.0)
+Requirement already satisfied: click>=7.0 in ./venv/lib/python3.11/site-packages (from uvicorn==0.30.0->-r requirements.txt (line 2)) (8.2.1)
+Requirement already satisfied: h11>=0.8 in ./venv/lib/python3.11/site-packages (from uvicorn==0.30.0->-r requirements.txt (line 2)) (0.16.0)
+Requirement already satisfied: iniconfig in ./venv/lib/python3.11/site-packages (from pytest==8.2.0->-r requirements.txt (line 3)) (2.1.0)
+Requirement already satisfied: packaging in ./venv/lib/python3.11/site-packages (from pytest==8.2.0->-r requirements.txt (line 3)) (25.0)
+Requirement already satisfied: pluggy<2.0,>=1.5 in ./venv/lib/python3.11/site-packages (from pytest==8.2.0->-r requirements.txt (line 3)) (1.6.0)
+Requirement already satisfied: anyio in ./venv/lib/python3.11/site-packages (from httpx==0.27.0->-r requirements.txt (line 4)) (4.10.0)
+Requirement already satisfied: certifi in ./venv/lib/python3.11/site-packages (from httpx==0.27.0->-r requirements.txt (line 4)) (2025.8.3)
+Requirement already satisfied: httpcore==1.* in ./venv/lib/python3.11/site-packages (from httpx==0.27.0->-r requirements.txt (line 4)) (1.0.9)
+Requirement already satisfied: idna in ./venv/lib/python3.11/site-packages (from httpx==0.27.0->-r requirements.txt (line 4)) (3.10)
+Requirement already satisfied: sniffio in ./venv/lib/python3.11/site-packages (from httpx==0.27.0->-r requirements.txt (line 4)) (1.3.1)
+Requirement already satisfied: annotated-types>=0.6.0 in ./venv/lib/python3.11/site-packages (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.111.0->-r requirements.txt (line 1)) (0.7.0)
+Requirement already satisfied: pydantic-core==2.33.2 in ./venv/lib/python3.11/site-packages (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.111.0->-r requirements.txt (line 1)) (2.33.2)
+Requirement already satisfied: typing-inspection>=0.4.0 in ./venv/lib/python3.11/site-packages (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.111.0->-r requirements.txt (line 1)) (0.4.1)
+Requirement already satisfied: dnspython>=2.0.0 in ./venv/lib/python3.11/site-packages (from email_validator>=2.0.0->fastapi==0.111.0->-r requirements.txt (line 1)) (2.8.0)
+Requirement already satisfied: typer>=0.15.1 in ./venv/lib/python3.11/site-packages (from fastapi-cli>=0.0.2->fastapi==0.111.0->-r requirements.txt (line 1)) (0.17.4)
+Requirement already satisfied: rich-toolkit>=0.14.8 in ./venv/lib/python3.11/site-packages (from fastapi-cli>=0.0.2->fastapi==0.111.0->-r requirements.txt (line 1)) (0.15.1)
+Requirement already satisfied: MarkupSafe>=2.0 in ./venv/lib/python3.11/site-packages (from jinja2>=2.11.2->fastapi==0.111.0->-r requirements.txt (line 1)) (3.0.2)
+Requirement already satisfied: rich>=13.7.1 in ./venv/lib/python3.11/site-packages (from rich-toolkit>=0.14.8->fastapi-cli>=0.0.2->fastapi==0.111.0->-r requirements.txt (line 1)) (14.1.0)
+Requirement already satisfied: markdown-it-py>=2.2.0 in ./venv/lib/python3.11/site-packages (from rich>=13.7.1->rich-toolkit>=0.14.8->fastapi-cli>=0.0.2->fastapi==0.111.0->-r requirements.txt (line 1)) (4.0.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in ./venv/lib/python3.11/site-packages (from rich>=13.7.1->rich-toolkit>=0.14.8->fastapi-cli>=0.0.2->fastapi==0.111.0->-r requirements.txt (line 1)) (2.19.2)
+Requirement already satisfied: mdurl~=0.1 in ./venv/lib/python3.11/site-packages (from markdown-it-py>=2.2.0->rich>=13.7.1->rich-toolkit>=0.14.8->fastapi-cli>=0.0.2->fastapi==0.111.0->-r requirements.txt (line 1)) (0.1.2)
+Requirement already satisfied: shellingham>=1.3.0 in ./venv/lib/python3.11/site-packages (from typer>=0.15.1->fastapi-cli>=0.0.2->fastapi==0.111.0->-r requirements.txt (line 1)) (1.5.4)
+Requirement already satisfied: httptools>=0.5.0 in ./venv/lib/python3.11/site-packages (from uvicorn[standard]>=0.12.0->fastapi==0.111.0->-r requirements.txt (line 1)) (0.6.4)
+Requirement already satisfied: python-dotenv>=0.13 in ./venv/lib/python3.11/site-packages (from uvicorn[standard]>=0.12.0->fastapi==0.111.0->-r requirements.txt (line 1)) (1.1.1)
+Requirement already satisfied: pyyaml>=5.1 in ./venv/lib/python3.11/site-packages (from uvicorn[standard]>=0.12.0->fastapi==0.111.0->-r requirements.txt (line 1)) (6.0.2)
+Requirement already satisfied: uvloop!=0.15.0,!=0.15.1,>=0.14.0 in ./venv/lib/python3.11/site-packages (from uvicorn[standard]>=0.12.0->fastapi==0.111.0->-r requirements.txt (line 1)) (0.21.0)
+Requirement already satisfied: watchfiles>=0.13 in ./venv/lib/python3.11/site-packages (from uvicorn[standard]>=0.12.0->fastapi==0.111.0->-r requirements.txt (line 1)) (1.1.0)
+Requirement already satisfied: websockets>=10.4 in ./venv/lib/python3.11/site-packages (from uvicorn[standard]>=0.12.0->fastapi==0.111.0->-r requirements.txt (line 1)) (15.0.1)
++ pip install pytest-cov
+WARNING: The directory '/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Requirement already satisfied: pytest-cov in ./venv/lib/python3.11/site-packages (6.3.0)
+Requirement already satisfied: pytest>=6.2.5 in ./venv/lib/python3.11/site-packages (from pytest-cov) (8.2.0)
+Requirement already satisfied: coverage>=7.5 in ./venv/lib/python3.11/site-packages (from coverage[toml]>=7.5->pytest-cov) (7.6.0)
+Requirement already satisfied: pluggy>=1.2 in ./venv/lib/python3.11/site-packages (from pytest-cov) (1.6.0)
+Requirement already satisfied: iniconfig in ./venv/lib/python3.11/site-packages (from pytest>=6.2.5->pytest-cov) (2.1.0)
+Requirement already satisfied: packaging in ./venv/lib/python3.11/site-packages (from pytest>=6.2.5->pytest-cov) (25.0)
++ export PYTHONPATH=/var/jenkins_home/workspace/fastapi
++ mkdir -p reports
++ pytest --maxfail=1 --disable-warnings -q --junitxml=reports/test-results.xml
+....                                                                     [100%]
+- generated xml file: /var/jenkins_home/workspace/fastapi/reports/test-results.xml -
+4 passed, 1 warning in 3.36s
++ pytest --maxfail=1 -q --disable-warnings --cov=app --cov-report=xml --junitxml=reports/test-results.xml
+....                                                                     [100%]
+- generated xml file: /var/jenkins_home/workspace/fastapi/reports/test-results.xml -
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.11.13-final-0 _______________
+
+Coverage XML written to file coverage.xml
+4 passed, 1 warning in 5.83s
+Post stage
+[8mha:////4Ip/PnASQRRD/Kj2cBS50+QputAqyQIVHLPWy4Wf6cBKAAAAox+LCAAAAAAAAABtjTESwiAURH/iWNhaeghSZKwcK1uGxhNggghh/idAJJUn8mreQTQzVm6xs2+b93zBOgY4UtDMKhwMxs4w7yZdFssUhqujzCxdWEcYySkmVBbUq9OCgpKCJVUNKw4bhZ2jaFAn2HIr77JxEnVzTqF8Bw616Ud4QMWLOcmQvjAH2N2mPhL+PH8FMPsEddt+au/fWFYUrL4AAAA=[0m[Pipeline] junit
+Recording test results
+[Checks API] No suitable checks publisher found.
+[8mha:////4PrWB6vK3ZOQW6td+4P9REf/Gwwkfpot/qgRIm+wblB9AAAApB+LCAAAAAAAAABtjTESwiAURH/iWNhaeghSZMbGsbJlaDwBJogQ5n8CRFJ5Iq/mHUQzY+UWO/u2ec8XrGOAIwXNrMLBYOwM827SZbFMYbg6yszShXWEkZxiQmVBvTotKCgpWFLVsOKwUdg5igZ1gi238i4bJ1E35xTKd+BQm36EB1S8mJMM6QtzgN1t6iPhz/NXALNPULftp/b+DZsFOYe+AAAA[0m[Pipeline] archiveArtifacts
+Archiving artifacts
+[8mha:////4KjH4O7HjLFcMn67jfTqmPHKD1vg9aiBl6L2gqm9ggaEAAAApB+LCAAAAAAAAABtjTESwiAURH/iWNhaeghSpLBwrGwZGk+ACSKE+Z8AkVSeyKt5B9HMWLnFzr5t3vMF6xjgSEEzq3AwGDvDvJt0WSxTGK6OMrN0YR1hJKeYUFlQr04LCkoKllQ1rDhsFHaOokGdYMutvMvGSdTNOYXyHTjUph/hARUv5iRD+sIcYHeb+kj48/wVwOx9grrdf6p9AxC1Tze+AAAA[0m[Pipeline] }
+$ docker stop --time=1 47f82adbe09d5f7dda9b6a1922101c53f71c6a6ecdd8444032de28d16bbb7d29
+$ docker rm -f --volumes 47f82adbe09d5f7dda9b6a1922101c53f71c6a6ecdd8444032de28d16bbb7d29
+[8mha:////4J8o3iz51NsxoOT6JvIrf8dZQGcYNg4n7XMJFLuc8KZjAAAApR+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOIiQYOEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgFTNx6xvgAAAA==[0m[Pipeline] // withDockerContainer
+[8mha:////4EwmeDJvkA9ONJWfjIZgTmU3tmMZb92EXkVt3fYqTBBBAAAAph+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOIigSgQSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryd8i13X8AFEA9/b4AAAA=[0m[Pipeline] }
+[8mha:////4K3yoYeFZGWmtl6JcJj9jTtmQfItJEP+bfXlrik6uv6SAAAApB+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOKCUDpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BGW9z3WoP8Qfkmi+AAAA[0m[Pipeline] // withEnv
+[8mha:////4MGZjrbbwgSp0caIWXr5MUP8BToZPb1yh53L0ic5aNXCAAAApB+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPMIRER2iSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BOVhn6uuP1RprUq+AAAA[0m[Pipeline] }
+[8mha:////4E2y8GVNDcpIeNmkHkZ/NZo1o5zlG03VzfoNGujamKbpAAAApB+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPMIRER2iSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BOWhzlXvP0BKMFW+AAAA[0m[Pipeline] // node
+[8mha:////4OO7j/0T1oaSkLlEblbEacwom4xsHCbnoPvvoxI7qppzAAAApB+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOKCgA6lorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYhQnnY59ptP3Opa+m+AAAA[0m[Pipeline] }
+[8mha:////4LsD+m/0OcoLvVrQ6plRNLAE0E7su6sxQuAOoEPVgawZAAAApR+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPMIRUhqEqNJaaXiBiQ/jxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgRI80WIqdFd6NJi8xcRiujifR80V0TJEdihanljU2C7acEJYUJawkbJA6x9GSSbCVvXqoyiky1TmF/B0llFbf4QmFzOakQvrCHGB3G3Vk+nn+CmD2PkFZ17n2hw+scp+mvgAAAA==[0m[Pipeline] // stage
+[8mha:////4ADdqKri4qjelxbl4WTo0rz+gXffbZNob4xhdOSRrQQ2AAAAph+LCAAAAAAAAABtjTEOwjAQBC9BKWgpeYTThApR0VpueIGJjXFi3QX7QlLxIr7GHzBEomKrnZVW83xBlSIcKDrRWew9ptaLIYwuNzFR7C+BJtHRWbSEiYIVyk6KjD0uqIgtLClKWElYW2wDJY+OYSM7fdd10OjqE8e87SWU3tzgAYXMZtaRvzBH2F5Hkwh/nr8CmAeGomEom93nWL0BolrfU8EAAAA=[0m[Pipeline] stage
+[8mha:////4OCz5RiNKzHB2Zv13BvNidsdlCKkL5jj0xtPH9mykc24AAAApx+LCAAAAAAAAABtjTEOwjAUQ3+LOrAycoh0ARbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAUxleXrCAAAA[0m[Pipeline] { (SonarQube Analysis)
+[8mha:////4MafGGsmDoFXqoLPC+T1z6MtYGkF72ADlcHkzm3aSSahAAAApx+LCAAAAAAAAABtjTEOwjAUQ3+LOrAycoh0QTAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD+jQxyjCAAAA[0m[Pipeline] node
+Running on [8mha:////4NINzvQf6YsTYWfySG7FXIgIlDK52jSZWF/ia4xBfRNzAAAAoR+LCAAAAAAAAABb85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZR/eT83ILSktQifY2k0sycEt3MPE19AHHxbH3KAAAA[0mJenkins in /var/jenkins_home/workspace/fastapi
+[8mha:////4AfM/kI5iTemuJKwiHzvM8yBIo5+oH9MaypG5ITwZkkcAAAAqB+LCAAAAAAAAABtjTEOwjAUQ3+LOrAycoh0QQIJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAD9vR8YwgAAAA==[0m[Pipeline] {
+[8mha:////4N5hMmmmBUBibze2nyqbAFRJy/lS77im8KuuarZiIYiXAAAApB+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOLSUIAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHNzJSLA2+AAAA[0m[Pipeline] checkout
+The recommended git tool is: git
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fastapi/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/solahuddeen02/jenkins-fastapi.git # timeout=10
+Fetching upstream changes from https://github.com/solahuddeen02/jenkins-fastapi.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.5'
+ > git fetch --tags --force --progress -- https://github.com/solahuddeen02/jenkins-fastapi.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 8b2e6c7f443307ee965f199a46f9b9f58feb3519 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 8b2e6c7f443307ee965f199a46f9b9f58feb3519 # timeout=10
+Commit message: "udate file"
+[8mha:////4FIRK9kd1G/C3FtSvVFE6jE6npQ1qpjspaQsq2ELqbWWAAAAqB+LCAAAAAAAAABtjTEOwjAUQ3+LOrAycoiUASQk1Ik16sIJQhNC0uj/kqSkEyfiatyBQCUmPFi2Jes9X1AFDw15zazC3mDoDBvcqHNiiXx/cZSYpTPrCAM5xVqVWpLqONeWooJZRQkLDkuFnaNgUEdYcSvuonYCdX2KPm8HDqWRN3hAwTM5Ch+/ZfKwvo4yEP44fwEwDRHK7T7bbvN5Vm/iwMPBwgAAAA==[0m[Pipeline] withEnv
+[8mha:////4DoQ6LusNGvY3ks72TQB7Y+/N3rxRdXpmbHyGhlE1HqHAAAApx+LCAAAAAAAAABtjTEOwjAUQ3+LOrAycogUBibE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAW2++SvCAAAA[0m[Pipeline] {
+[8mha:////4ORF73dN4P81nsulWWJ3iHWGInudk5i56xDkLXD1WdJbAAAApB+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOIikKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO63n9qFN4OkKLa+AAAA[0m[Pipeline] isUnix
+[8mha:////4BbcjfrF+mDtCrhNT1/Ic04nLecCwjReK+owm2Msyx+/AAAApx+LCAAAAAAAAABtjTEOwjAUQ3+LOrAycohUCDEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LD6bAv6fCAAAA[0m[Pipeline] withEnv
+[8mha:////4L2ix+9ItnbxMXEzehPXHFIhXWavP4lNLa/bFqf1nJenAAAApx+LCAAAAAAAAABtjTEOwjAUQ3+LOrAycoh0ACbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAd9J1uLCAAAA[0m[Pipeline] {
+[8mha:////4ENsUP91KfHBNjewyPhM2EYKAJ1Vn7L4D9I9p/WWH/+4AAAAox+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOLSkApR0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMPkEZb3/VO3f4x1Rq74AAAA=[0m[Pipeline] sh
++ docker inspect -f . sonarsource/sonar-scanner-cli:latest
+.
+[8mha:////4DK2wLF5DutmV2IBje//1H6qSNQXV1jcdNdqbii5qNBWAAAApB+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOLSAA2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7Bqph/Ve+AAAA[0m[Pipeline] }
+[8mha:////4JlmWXT3J3q2NdFndYez3PNIaR/rdhImmgkXxKqOLDK3AAAApR+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOJSIESBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgGsJ8UCvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4KVRQ2atBnt3lwkkmact7WHC9vJdYPkZBW2K2gJYV91mAAAAqB+LCAAAAAAAAABtjTEOwjAUQ3+LOrAycohUDEhIiKlrlIUThCaEtNH/5SelnTgRV+MOtFRiwoNlW7Le6w1FZDgRO9FYbD3G2osu9G5KYiBur4EG0dBF1ISRghXKDoqMrZaqKFlYlOWwkrC2WAeKHl2CjWz0Q5dBoyvPiaftKCH35g5PyORETprTt4wM21tvIuGP8xcAY5cg3+9mO8zP4gNlMHjNwgAAAA==[0m[Pipeline] withDockerContainer
+Jenkins seems to be running inside container 15743814b0c8cc86bf4995842a9622d939f96770bf8bda0a31f6ae03bcc26167
+$ docker run -t -d -u 1000:1000 -v null:/usr/src -w /usr/src -w /var/jenkins_home/workspace/fastapi --volumes-from 15743814b0c8cc86bf4995842a9622d939f96770bf8bda0a31f6ae03bcc26167 -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** sonarsource/sonar-scanner-cli:latest cat
+$ docker top 7c6517cbb3a931ec9eab7184b6fd1983cd664fcdddabc61a284e234a79e6960d -eo pid,comm
+[8mha:////4MeQSHLF0FJd7qifHuNeg0xHnmTB0zq6j23TWixXPOKrAAAApx+LCAAAAAAAAABtjTEOwjAUQ3+LOrAycoh0QgIhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0XdaX3CAAAA[0m[Pipeline] {
+[8mha:////4EvXgCgUjv6a12iBHdtwF2HWg7uvdVKnsKAZqL+v/tWIAAAAqB+LCAAAAAAAAABtjTEOwjAUQ3+LOrAycoiUBSSEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g3QSQCqwgAAAA==[0m[Pipeline] withSonarQubeEnv
+Injecting SonarQube environment variables using the configuration: sonarqube-25.8.0
+[8mha:////4MuTMr+Z8DP2yBHn0rSbfdpEnnOADJHkBulrDEUjH52sAAAApx+LCAAAAAAAAABtjTEOwjAUQ3+LOrAycogUFhbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAQB2j23CAAAA[0m[Pipeline] {
+[8mha:////4PS480U9T5eaXKvAcyutR671zugo64a1dNNqo8iaRUbsAAAApB+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOIiKGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO63n9qFNzkd4Tq+AAAA[0m[Pipeline] sh
++ sonar-scanner -Dsonar.projectKey=jenkins-fastapi -Dsonar.sources=./app -Dsonar.host.url=http://host.docker.internal:9000 -Dsonar.login=******
+04:25:50.556 INFO  Scanner configuration file: /opt/sonar-scanner/conf/sonar-scanner.properties
+04:25:50.563 INFO  Project root configuration file: /var/jenkins_home/workspace/fastapi/sonar-project.properties
+04:25:50.591 INFO  SonarScanner CLI 7.2.0.5079
+04:25:50.596 INFO  Linux 6.10.14-linuxkit amd64
+04:25:53.017 INFO  Communicating with SonarQube Server 9.9.8.100196
+04:25:55.140 INFO  Load global settings
+04:25:55.349 INFO  Load global settings (done) | time=209ms
+04:25:55.362 INFO  Server id: 147B411E-AZkEzece_EDCswqC9RXn
+04:25:55.382 INFO  User cache: /opt/sonar-scanner/.sonar/cache
+04:25:55.408 INFO  Load/download plugins
+04:25:55.410 INFO  Load plugins index
+04:25:55.626 INFO  Load plugins index (done) | time=214ms
+04:26:00.802 INFO  Load/download plugins (done) | time=5394ms
+04:26:02.092 INFO  Process project properties
+04:26:02.105 INFO  Process project properties (done) | time=13ms
+04:26:02.112 INFO  Execute project builders
+04:26:02.115 INFO  Execute project builders (done) | time=3ms
+04:26:02.125 INFO  Project key: jenkins-fastapi
+04:26:02.126 INFO  Base dir: /var/jenkins_home/workspace/fastapi
+04:26:02.127 INFO  Working dir: /var/jenkins_home/workspace/fastapi/.scannerwork
+04:26:02.147 INFO  Load project settings for component key: 'jenkins-fastapi'
+04:26:02.266 INFO  Load project settings for component key: 'jenkins-fastapi' (done) | time=119ms
+04:26:02.850 INFO  Auto-configuring with CI 'Jenkins'
+04:26:02.858 INFO  Load quality profiles
+04:26:03.272 INFO  Load quality profiles (done) | time=414ms
+04:26:03.294 INFO  Load active rules
+04:26:07.346 INFO  Load active rules (done) | time=4052ms
+04:26:07.361 INFO  Load analysis cache
+04:26:07.404 INFO  Load analysis cache (2.1 kB) | time=43ms
+04:26:07.543 INFO  Load project repositories
+04:26:07.623 INFO  Load project repositories (done) | time=80ms
+04:26:07.853 INFO  Indexing files...
+04:26:07.858 INFO  Project configuration:
+04:26:10.840 INFO  8 files indexed
+04:26:10.842 INFO  0 files ignored because of scm ignore settings
+04:26:10.847 INFO  Quality profile for py: Sonar way
+04:26:10.848 INFO  ------------- Run sensors on module FastAPI Clean Demo
+04:26:11.035 INFO  Load metrics repository
+04:26:11.078 INFO  Load metrics repository (done) | time=42ms
+04:26:13.913 INFO  Sensor Python Sensor [python]
+04:26:13.922 WARN  Your code is analyzed as compatible with python 2 and 3 by default. This will prevent the detection of issues specific to python 2 or python 3. You can get a more precise analysis by setting a python version in your configuration via the parameter "sonar.python.version"
+04:26:13.949 INFO  Starting global symbols computation
+04:26:13.961 INFO  3 source files to be analyzed
+04:26:14.492 INFO  3/3 source files have been analyzed
+04:26:14.604 INFO  Starting rules execution
+04:26:14.607 INFO  4 source files to be analyzed
+04:26:15.691 INFO  4/4 source files have been analyzed
+04:26:15.692 INFO  The Python analyzer was able to leverage cached data from previous analyses for 0 out of 4 files. These files were not parsed.
+04:26:15.694 INFO  Sensor Python Sensor [python] (done) | time=1781ms
+04:26:15.695 INFO  Sensor Cobertura Sensor for Python coverage [python]
+04:26:17.167 INFO  Python test coverage
+04:26:17.174 INFO  Parsing report '/var/jenkins_home/workspace/fastapi/coverage.xml'
+04:26:17.278 INFO  Sensor Cobertura Sensor for Python coverage [python] (done) | time=1583ms
+04:26:17.279 INFO  Sensor PythonXUnitSensor [python]
+04:26:18.510 INFO  Sensor PythonXUnitSensor [python] (done) | time=1231ms
+04:26:18.511 INFO  Sensor JaCoCo XML Report Importer [jacoco]
+04:26:18.515 INFO  'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+04:26:18.518 INFO  No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+04:26:18.519 INFO  Sensor JaCoCo XML Report Importer [jacoco] (done) | time=8ms
+04:26:18.520 INFO  Sensor CSS Rules [javascript]
+04:26:18.522 INFO  No CSS, PHP, HTML or VueJS files are found in the project. CSS analysis is skipped.
+04:26:18.523 INFO  Sensor CSS Rules [javascript] (done) | time=4ms
+04:26:18.524 INFO  Sensor C# Project Type Information [csharp]
+04:26:18.527 INFO  Sensor C# Project Type Information [csharp] (done) | time=2ms
+04:26:18.528 INFO  Sensor C# Analysis Log [csharp]
+04:26:18.548 INFO  Sensor C# Analysis Log [csharp] (done) | time=21ms
+04:26:18.549 INFO  Sensor C# Properties [csharp]
+04:26:18.551 INFO  Sensor C# Properties [csharp] (done) | time=2ms
+04:26:18.551 INFO  Sensor HTML [web]
+04:26:18.556 INFO  Sensor HTML [web] (done) | time=5ms
+04:26:18.557 INFO  Sensor TextAndSecretsSensor [text]
+04:26:18.571 INFO  4 source files to be analyzed
+04:26:18.590 INFO  4/4 source files have been analyzed
+04:26:18.591 INFO  Sensor TextAndSecretsSensor [text] (done) | time=34ms
+04:26:18.591 INFO  Sensor VB.NET Project Type Information [vbnet]
+04:26:18.595 INFO  Sensor VB.NET Project Type Information [vbnet] (done) | time=3ms
+04:26:18.595 INFO  Sensor VB.NET Analysis Log [vbnet]
+04:26:18.612 INFO  Sensor VB.NET Analysis Log [vbnet] (done) | time=17ms
+04:26:18.613 INFO  Sensor VB.NET Properties [vbnet]
+04:26:18.615 INFO  Sensor VB.NET Properties [vbnet] (done) | time=2ms
+04:26:18.618 INFO  Sensor IaC Docker Sensor [iac]
+04:26:18.623 INFO  0 source files to be analyzed
+04:26:18.699 INFO  0/0 source files have been analyzed
+04:26:18.700 INFO  Sensor IaC Docker Sensor [iac] (done) | time=83ms
+04:26:18.707 INFO  ------------- Run sensors on project
+04:26:18.929 INFO  Sensor Analysis Warnings import [csharp]
+04:26:18.934 INFO  Sensor Analysis Warnings import [csharp] (done) | time=6ms
+04:26:18.935 INFO  Sensor Zero Coverage Sensor
+04:26:18.938 INFO  Sensor Zero Coverage Sensor (done) | time=2ms
+04:26:18.966 INFO  CPD Executor 2 files had no CPD blocks
+04:26:18.971 INFO  CPD Executor Calculating CPD for 1 file
+04:26:19.006 INFO  CPD Executor CPD calculation finished (done) | time=32ms
+04:26:19.344 INFO  Analysis report generated in 314ms, dir size=129.2 kB
+04:26:20.651 INFO  Analysis report compressed in 1301ms, zip size=23.1 kB
+04:26:20.777 INFO  Analysis report uploaded in 121ms
+04:26:20.797 INFO  ANALYSIS SUCCESSFUL, you can find the results at: http://host.docker.internal:9000/dashboard?id=jenkins-fastapi
+04:26:20.798 INFO  Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+04:26:20.798 INFO  More about the report processing at http://host.docker.internal:9000/api/ce/task?id=AZksuYjGEGDg8WwJ5dzO
+04:26:20.901 INFO  Analysis total time: 19.867 s
+04:26:20.911 INFO  EXECUTION SUCCESS
+04:26:20.917 INFO  Total time: 30.439s
++ -Dsonar.tests=tests -Dsonar.python.coverage.reportPaths=coverage.xml -Dsonar.sourceEncoding=UTF-8
+/var/jenkins_home/workspace/fastapi@tmp/durable-12499d11/script.sh.copy: line 3: -Dsonar.tests=tests: command not found
+[8mha:////4Ow17ks/6Dvtnow6dh8D74cIMnyCPxccOQ6m7pkskgIvAAAApR+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOIihESDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDud5/avgHITZ9tvgAAAA==[0m[Pipeline] }
+[8mha:////4EYItzKHJG0+qAbxshxBl8zUqdAqlbTroQyPH93tWPNvAAAApB+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOJCgWgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcr97lPbN+ZNnQe+AAAA[0m[Pipeline] // withSonarQubeEnv
+[8mha:////4GC8hgtzctOwJcCGdO1E/k3QfNTYMUnhHSqbTeZ4XFcNAAAApR+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOJSBQkhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AEkdTCevgAAAA==[0m[Pipeline] }
+$ docker stop --time=1 7c6517cbb3a931ec9eab7184b6fd1983cd664fcdddabc61a284e234a79e6960d
+$ docker rm -f --volumes 7c6517cbb3a931ec9eab7184b6fd1983cd664fcdddabc61a284e234a79e6960d
+[8mha:////4EiGsLp+r4JviA6OlrJUTHOG0Jr26qPwjhjBDu/Jgb+/AAAApR+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPMKpiJAQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AEcN6NvvgAAAA==[0m[Pipeline] // withDockerContainer
+[8mha:////4C2bkwvgR+Lo6JIRyTBXiWdyJhGSwcbwoYflrCxKzpyAAAAApR+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOIiCqBAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuD7l22w8dXCPdvgAAAA==[0m[Pipeline] }
+[8mha:////4JMYCzczZO/A7u+usiCtjU6CGNIaNItjpzQ1KYcb3RogAAAApR+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOJCA0JCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuD7l22w9e3nJbvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4HEuz9e16TzF7uCoyO50aQM6JG2srkvhfp7/PXtqJA7cAAAApR+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOLSIARCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuDrm2+w+ItO6HvgAAAA==[0m[Pipeline] }
+[8mha:////4JxRJ2pyejiJvVldJwULo1HtY+eMXDUmLzV4B6UTHPVtAAAApR+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOJCgZQCUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkFZ73Md6g9l8ymWvgAAAA==[0m[Pipeline] // node
+[8mha:////4BYOSOpv9+Q6fBDnaUsLG2aGHKOXcebDUyV0FZjk670HAAAAph+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOIiJAQFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4TysM21238AVhByKr4AAAA=[0m[Pipeline] }
+[8mha:////4LY4NPJl0H6m2A78Og1lZcobsN/yKLb9GN+6OkDWPa4mAAAAph+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOIiIRAFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4TysM21238AQjPvNb4AAAA=[0m[Pipeline] // stage
+[8mha:////4NBZnax1ruuOyUcBGRbqG7YFX8qN7WAZGBvbgvma0mkfAAAApx+LCAAAAAAAAABtjTEOwjAQBM9BKWgpeYRTgESBqGgtN7zAxMY4se6CfSGpeBFf4w8EIlGx1c5Kq3m+oMwJDpS8bBy2AXMdZBd7PzU5UGovkQbZ0FnWhJmik9oNmqw7zqiJHcwRBSwULB3WkXJAz7BSjbmbKhr01YnTtO0VFMHe4AFCTWY2ib8wJlhfe5sJf56/Ahg7BrFlKHabz7F8AyKjbrTBAAAA[0m[Pipeline] stage
+[8mha:////4C79PJc7cI1EbkRVbLdvJLTixoAiYUQeOLbG37ucmeKxAAAAqB+LCAAAAAAAAABtjTEOwjAUQ3+LOrAycoh0AIkBMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLkh91s+/lZfABpxnKZwgAAAA==[0m[Pipeline] { (Quality Gate)
+Stage "Quality Gate" skipped due to earlier failure(s)
+[8mha:////4KE9NDgd+eRxmYPP5KaBVAbZvQBjjAf/31P37Jef4sAGAAAApB+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOLSgCgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO63n9qFN/DO8Oq+AAAA[0m[Pipeline] getContext
+[8mha:////4EfMn4T/hrAtGm8hd7XiU2S+cfIcMU6VZOls5zRw/0c9AAAApB+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOLSICgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcr97lPbNwESVPK+AAAA[0m[Pipeline] }
+[8mha:////4AnguMzOBvVA3q8pnxjt6pbEbh/3y2iQIBuW03wR4VHVAAAApB+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOJSUKRAVLRWGl5gEmPsWHeO7eBUvIiv8QcCkajYYrWzzTxfsI4Bjhw0WkW9odga9G7U88LMob86zmj5gi1TZKewUbnhTp0WbDgpWFKUsBKwUdQ6joZ0gq2w8i4rJ0lX5xTm7yCgNN0ADyjEbE4ypC9MAXa3sYtMP89fAUzeJyjr+lP7NwdUbKe+AAAA[0m[Pipeline] // stage
+[8mha:////4A8PC6zW1GuHfaja4CGYMsfZun/eO6aaD3oyVcA217NaAAAApx+LCAAAAAAAAABtjTEOwjAQBM9BKWgpeYTTIIGEqGgtN7zAxMY4se6CfSGpeBFf4w8EIlGx1c5Kq3m+oMwJDpS8bBy2AXMdZBd7PzU5UGovkQbZ0FnWhJmik9oNmqw7zqiJHcwRBSwULB3WkXJAz7BSjbmbKhr01YnTtO0VFMHe4AFCTWY2ib8wJlhfe5sJf56/Ahg7BrFhKLa7z7F8A+FTqd7BAAAA[0m[Pipeline] stage
+[8mha:////4DoLgygEb7KN+Uw9mZuIn44Y+C0tTkW61UCz+ioCkCF7AAAAph+LCAAAAAAAAABtjTEOwjAUQ3+LOrAycoh0BISYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+81LNBsIAAAA=[0m[Pipeline] { (Build Docker Image)
+Stage "Build Docker Image" skipped due to earlier failure(s)
+[8mha:////4PzTs+hp1tccLIl9gCQc6Ou+Vxf2hCU2npdJpAZShJi6AAAApB+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOJCBwilorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYI5e6Qa78dPkgcDP2+AAAA[0m[Pipeline] getContext
+[8mha:////4M8l9SrV7+V67LHzqe3mNMCcmoAoheMK4iwzgnOezn7FAAAApR+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOIiKkAoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AHtLqhnvgAAAA==[0m[Pipeline] }
+[8mha:////4AgmWzyBG3Fuoji8wBuUZ07QO4Lbj0H32RND7WIhEc/7AAAApR+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOIi0RAJUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkFZ73Md6g/VbDuWvgAAAA==[0m[Pipeline] // stage
+[8mha:////4JOTeBb6g0l/2r6Y/kCEn60K/sjh6Y1f/1lFKD6mj9CdAAAApx+LCAAAAAAAAABtjTEOwjAQBM9BKWgpeYRTQIGEqGgtN7zAxMY4se6CfSGpeBFf4w8EIlGx1c5Kq3m+oMwJDpS8bBy2AXMdZBd7PzU5UGovkQbZ0FnWhJmik9oNmqw7zqiJHcwRBSwULB3WkXJAz7BSjbmbKhr01YnTtO0VFMHe4AFCTWY2ib8wJlhfe5sJf56/Ahg7BrFlKHabz7F8A8vTJkLBAAAA[0m[Pipeline] stage
+[8mha:////4LYWOjj7Wau2wL11Ybk48fBJqEwGbwDmHWfNkkt7TdQDAAAAqB+LCAAAAAAAAABtjTEOwjAUQ3+LOrAycoh0gAEJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLkh91s+/lZfADxKa4dwgAAAA==[0m[Pipeline] { (Deploy Container)
+Stage "Deploy Container" skipped due to earlier failure(s)
+[8mha:////4MUnvjO2yg5Dh77/Q2ss0wifmrmtyi7zyidYJwxV7bUfAAAApR+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOLSgISEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK//dQuvAFhm4w4vgAAAA==[0m[Pipeline] getContext
+[8mha:////4HIoVIM32fWCIEt7cgGxAy9acpvhZgcPFu5gmWeuUEXrAAAApR+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOLSIISEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDud5/avgEnfoSDvgAAAA==[0m[Pipeline] }
+[8mha:////4FrkVtgaQFA7QKF1j1+GHIcS/zSuPnkkjifISXaNGDSgAAAApR+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOJSUICEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDud5/avgEhOLzWvgAAAA==[0m[Pipeline] // stage
+[8mha:////4HPCZ4KXiU9Ek7G8i+R0eliJB9hCudTkhQmEBk/MwMsTAAAAph+LCAAAAAAAAABtjTEOwjAQBM9BKWgpeYTTUERCVLSWG15gEmOcWHfBvpBUvIiv8QcMkajYamel1TxfUKYIB4pOdhZ7j6nxcgijy01OFPtLoEl2dJYNYaJgpbaTptYeF9TEFpaIAlYK1habQMmjY9ioztxNFQy66sQxb3sFhW9v8AChsplN5C/MEbbXsU2EP89fAcwDg9gxFHX9OZZvCCPhKMEAAAA=[0m[Pipeline] stage
+[8mha:////4B2J/2H7BRzlEmfakGN03yl5p0QG3QN3UhnFB9R0+9tgAAAAph+LCAAAAAAAAABtjTEOwjAUQ3+LOrAycoh0LUJMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBa70RgsIAAAA=[0m[Pipeline] { (Declarative: Post Actions)
+[8mha:////4FTsFAH+GD4dGZMC897W9rFaq3uKheXQWtom9NwKxEIiAAAApB+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOJCSYSo0lppeIGJjXFi3RnbIal4EV/jD1hEomKL1c4283rDOgY4cTDYaxosxc6id6PJCycOw9XxhD1fsGOK7DS2empZ6WbBlpOGJUUJKwEbTZ3jaMkk2IpePmTlJJnqnEL+jgJKq+7whEJkc5IhfWEOsLuNKjL9PH8FMPsE5aHOVe/9B9Nk7iW+AAAA[0m[Pipeline] echo
+Pipeline finished
+[8mha:////4K1UzTf0D7In+2tL5aSODTJ5zytMJgRf+chrsuYDiF+VAAAApB+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPOIiOiJEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BGW9z3WoP5Y5R0a+AAAA[0m[Pipeline] }
+[8mha:////4NMnBtZ31XcjTf7a/+iGpFT7YQkyRBmwi9tjjKEunr0iAAAApR+LCAAAAAAAAABtjTEOwjAQBC9BFLSUPMKRqIIQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJygP+1x1/QGue9S3vgAAAA==[0m[Pipeline] // stage
+[8mha:////4EvOEGwp5sAeEL3GaWEc2/evj0Ihc/fWLbaKAgYjK8/fAAAAox+LCAAAAAAAAABtjTEOwjAQBDdBFLSUPMIpoEGIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfL8VZLsPONO2eb0AAAA=[0m[Pipeline] }
+[8mha:////4GIBGKTbULagtIxqTSPOXhskQLZ1LAsiv2yJLFAVkg7MAAAAox+LCAAAAAAAAABtjTEOwjAQBDdBFLSUPMIpoEGIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfL8TZNsPi5ryVb0AAAA=[0m[Pipeline] // withEnv
+[8mha:////4PBevzTiYbO9HVYNfFh2cCFjAzsvssdbzbwl2034DluSAAAApB+LCAAAAAAAAABtjTEOwjAQBDdBFLSUPMKRkCgQoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN/vBNn2A62DlR+9AAAA[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 127
+Finished: FAILURE

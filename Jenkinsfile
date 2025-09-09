@@ -1,7 +1,7 @@
 pipeline {
     agent none
     environment {
-        SONARQ = 'sonarqube-25.8.0'
+        SONARQ = 'sonarqube-25.8.0'   // ชื่อตรงกับที่ตั้งใน Jenkins > Manage Jenkins > Configure System
         IMAGE_NAME = 'fastapi-app:latest'
         CONTAINER_NAME = 'fastapi-app'
         APP_PORT = '8000'
@@ -56,8 +56,6 @@ pipeline {
                         sonar-scanner \
                           -Dsonar.projectKey=jenkins-fastapi \
                           -Dsonar.sources=./app \
-                          -Dsonar.host.url=http://host.docker.internal:9000 \
-                          -Dsonar.login=squ_532bd463acaf828450f602bee1ed44357f964da9
                           -Dsonar.tests=tests \
                           -Dsonar.python.coverage.reportPaths=coverage.xml \
                           -Dsonar.sourceEncoding=UTF-8
@@ -67,12 +65,12 @@ pipeline {
         }
 
         stage('Quality Gate') {
-    steps {
-        timeout(time: 1, unit: 'HOURS') {
-            waitForQualityGate abortPipeline: true
+            steps {
+                timeout(time: 1, unit: 'HOURS') {
+                    waitForQualityGate abortPipeline: true
+                }
+            }
         }
-    }
-}
 
         stage('Build Docker Image') {
             agent {
